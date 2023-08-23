@@ -1,0 +1,15 @@
+@import url('https://fonts.google.com/specimen/Roboto+Mono');
+*{
+    margin: 0;
+}
+body{
+    margin: 2em;
+    background-color: #323437;
+    color: #E2B714;
+    font-family: Roboto Mono, sans-serif;
+    font-size: 2em;
+}
+
+input{
+    margin-left: 1em;
+}
