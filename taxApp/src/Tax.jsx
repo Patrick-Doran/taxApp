@@ -7,6 +7,7 @@ function Tax(props){
     return(
         <div className="main-content">
             <h1>Itemization of Tax Items</h1>
+            <h2>Initial Total Values</h2>
             <label>
                 Enter the sub-total:
                 <input name="subTotal" type='number' 
@@ -14,7 +15,6 @@ function Tax(props){
                 onChange={e => setSubTotal(e.target.value)}
                 />
             </label>
-            <br></br>
             <label>
                 Enter the final total:
                 <input name="finalTotal" type='number' 
@@ -23,8 +23,16 @@ function Tax(props){
                 />
             </label>
             <p>Your tax is {taxTotal}</p>
-
-            
+            <h2>Itemization</h2>
+            <label>
+                Item 1:
+                <input name="item1" type='number' />
+            </label>
+            <label>
+                Item 2:
+                <input name="item2" type='number' />
+            </label>
+            <button name="btn">Add More Items</button>
         </div>
     );
 }
