@@ -61,6 +61,7 @@ function Tax(){
                 </label>
                 <p>Amount with tax: {itemFinal2}</p>
                 <h3>Total of taxed items: {parseFloat(itemFinal1) + parseFloat(itemFinal2)}</h3>
+                <p>Difference of {(parseFloat(itemFinal1) + parseFloat(itemFinal2) - finalTotal)}</p>
             </div>
         </div>
     );
