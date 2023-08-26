@@ -60,7 +60,7 @@ function Tax(){
                     />
                 </label>
                 <p>Amount with tax: {itemFinal2}</p>
-                <h3>Total: {parseFloat(itemFinal1) + parseFloat(itemFinal2)}</h3>
+                <h3>Total of taxed items: {parseFloat(itemFinal1) + parseFloat(itemFinal2)}</h3>
             </div>
         </div>
     );
