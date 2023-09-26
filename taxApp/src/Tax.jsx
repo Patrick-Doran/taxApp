@@ -11,6 +11,8 @@ function Tax(){
     const taxTotal = ((finalTotal - subTotal) / subTotal);
     const itemFinal1 = (items.item1 * taxTotal) + items.item1 * 1;
     const itemFinal2 = (items.item2 * taxTotal) + items.item2 * 1;
+    const itemFinal3 = (items.item3 * taxTotal) + items.item3 * 1;
+    const itemFinal4 = (items.item4 * taxTotal) + items.item4 * 1;
     return(
         <div className="main-content">
             <div className="tax-content">
@@ -60,8 +62,30 @@ function Tax(){
                     />
                 </label>
                 <p>Amount with tax: {itemFinal2}</p>
-                <h3>Total of taxed items: {parseFloat(itemFinal1) + parseFloat(itemFinal2)}</h3>
-                <p>Difference of {(parseFloat(itemFinal1) + parseFloat(itemFinal2) - finalTotal)}</p>
+                <label>
+                    Item 3:
+                    <input name="item3" type='number' 
+                    value={items.item3}
+                    onChange={e => setItems({
+                        ...items,
+                        item3: e.target.value,
+                    })}
+                    />
+                </label>
+                <p>Amount with tax: {itemFinal3}</p>
+                <label>
+                    Item 4:
+                    <input name="item4" type='number' 
+                    value={items.item4}
+                    onChange={e => setItems({
+                        ...items,
+                        item4: e.target.value,
+                    })}
+                    />
+                </label>
+                <p>Amount with tax: {itemFinal4}</p>
+                <h3>Total of taxed items: {parseFloat(itemFinal1) + parseFloat(itemFinal2) + parseFloat(itemFinal3) + parseFloat(itemFinal4)}</h3>
+                <p>Difference of {(parseFloat(itemFinal1) + parseFloat(itemFinal2) + parseFloat(itemFinal3) + parseFloat(itemFinal4) - finalTotal)}</p>
             </div>
         </div>
     );
