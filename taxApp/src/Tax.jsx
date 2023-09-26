@@ -34,7 +34,7 @@ function Tax(){
                     onChange={e => setFinalTotal(e.target.value)}
                     />
                 </label>
-                <p>Your tax is {taxTotal * 100}</p>
+                <p>Your tax is {taxTotal * 100}%</p>
             </div>
             {/* Take the taxTotal value and calculate the value with each item plus tax
                 Automatically add up items to total value to compare to invoice */}
