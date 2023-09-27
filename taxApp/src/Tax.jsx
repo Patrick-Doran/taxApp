@@ -5,6 +5,8 @@ function Tax(){
     const [items, setItems] = useState({
         item1: '',
         item2: '',
+        item3: '',
+        item4: '',
     })
 
     // Value of tax as decimal
