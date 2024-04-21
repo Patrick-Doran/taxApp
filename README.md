@@ -2,6 +2,7 @@
 Built to speed up a tedious process in invoicing at my current job. The items often have to go to seperate cost centers, thus the need to seperate the items.
 
 In agriculture, one can aquire a tax exemption to reduce the tax cost of a purchase, so I let the user calculate the tax amount using the sub total and final total. As well as being usable in any region with taxes.
+
 Built using React for speedy calculations and display.
 
 # Getting the tool
