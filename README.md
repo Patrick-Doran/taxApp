@@ -18,6 +18,6 @@ Then put in the *untaxed* amount of each sub item into the following input field
 At the bottom is a double check that has the final total, which should match your physical receipt, and a difference amount if there is a mistake.
 
 # Future Developments
-- Currently hard coded to four sub items, in the future I want to let the user click a button to add more inputs.
+- Currently hard coded to four sub items, let the user click a button to add more inputs.
 - Different layout to site pending feedback.
 - Potential of exporting the values to a text file.
