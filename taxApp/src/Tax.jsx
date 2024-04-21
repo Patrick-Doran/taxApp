@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import TaxCalc from "../components/TaxCalc";
 function Tax(){
     const [subTotal, setSubTotal] = useState(' ');
     const [finalTotal, setFinalTotal] = useState(' ');
@@ -11,8 +10,12 @@ function Tax(){
     })
 
     // Figure tax amount of sub item then adding to original item price and return it
-    const taxFinal = (num) => {
+    const taxSubItem = (num) => {
         return (num * taxTotal) + num * 1;
+    }
+
+    const taxFinal = (numTax) =>{
+        return parseFloat(taxSubItem(numTax.item1)) + parseFloat(taxSubItem(numTax.item2)) + parseFloat(taxSubItem(numTax.item3)) + parseFloat(taxSubItem(numTax.item4));
     }
     // Value of tax as decimal
     const taxTotal = ((finalTotal - subTotal) / subTotal);
@@ -54,7 +57,7 @@ function Tax(){
                     })}
                     />
                 </label>
-                <p>Amount with tax: {taxFinal(items.item1)}</p>
+                <p>Amount with tax: {taxSubItem(items.item1)}</p>
                 <label>
                     Item 2:
                     <input name="item2" type='number' 
@@ -65,7 +68,7 @@ function Tax(){
                     })}
                     />
                 </label>
-                <p>Amount with tax: {taxFinal(items.item2)}</p>
+                <p>Amount with tax: {taxSubItem(items.item2)}</p>
                 <label>
                     Item 3:
                     <input name="item3" type='number' 
@@ -76,7 +79,7 @@ function Tax(){
                     })}
                     />
                 </label>
-                <p>Amount with tax: {taxFinal(items.item3)}</p>
+                <p>Amount with tax: {taxSubItem(items.item3)}</p>
                 <label>
                     Item 4:
                     <input name="item4" type='number' 
@@ -87,9 +90,9 @@ function Tax(){
                     })}
                     />
                 </label>
-                <p>Amount with tax: {taxFinal(items.item4)}</p>
-                <h3>Total of taxed items: {parseFloat(taxFinal(items.item1)) + parseFloat(taxFinal(items.item2)) + parseFloat(taxFinal(items.item3)) + parseFloat(taxFinal(items.item4))}</h3>
-                <p>Difference of {(parseFloat(taxFinal(items.item1)) + parseFloat(taxFinal(items.item2)) + parseFloat(taxFinal(items.item3)) + parseFloat(taxFinal(items.item4)) - finalTotal)}</p>
+                <p>Amount with tax: {taxSubItem(items.item4)}</p>
+                <h3>Total of taxed items: {taxFinal(items)}</h3>
+                <p>Difference of {taxFinal(items) - finalTotal}</p>
             </div>
         </div>
     );
