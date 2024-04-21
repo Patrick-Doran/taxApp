@@ -19,5 +19,6 @@ At the bottom is a double check that has the final total, which should match you
 
 # Future Developments
 - Currently hard coded to four sub items, let the user click a button to add more inputs.
+- Enable only some items to be taxed, with user's input
 - Different layout to site pending feedback.
 - Potential of exporting the values to a text file.
