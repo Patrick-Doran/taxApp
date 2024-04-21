@@ -6,10 +6,10 @@ body{
     background-color: #323437;
     color: #E2B714;
     font-family: Roboto Mono, sans-serif;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 .nav-content{
-    height: 2vh;
+    height: 1.5vh;
     background-color: #E2B714;
     width: 100%;
 }
@@ -19,12 +19,12 @@ body{
     margin-left: 3em;
 }
 h1{
-    margin-bottom: .75em;
+    margin-bottom: .65em;
     margin-top: .25em;
 }
 h2{
-    margin-bottom: .75em;
-    margin-top: .75em;
+    margin-bottom: .55em;
+    margin-top: .55em;
 }
 h3{
     margin-top: .75em;
