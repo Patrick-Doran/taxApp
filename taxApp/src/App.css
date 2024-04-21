@@ -54,3 +54,9 @@ input[type=number]::-webkit-inner-spin-button,
 .btn{
     width: 2em;
 }
+/* Mobile */
+@media (max-width: 760px) {
+    .main-content{
+        margin-left: 0;
+    }
+}
