@@ -14,6 +14,7 @@ Currently hosted and deployed with [Firebase](https://firebase.google.com/).
 # Usage
 Firstly input the subtotal and final total of the receipt, this will calculate the tax amount to be used.
 Then put in the *untaxed* amount of each sub item into the following input fields. Right below will the the amount plus tax to then be inputted into the bookkeeping software.
+
 At the bottom is a double check that has the final total, which should match your physical receipt, and a difference amount if there is a mistake.
 
 # Future Developments
