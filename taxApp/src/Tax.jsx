@@ -14,6 +14,7 @@ function Tax(){
         return (num * taxTotal) + num * 1;
     }
 
+    // Calculate the total of all sub items
     const taxFinal = (numTax) =>{
         return parseFloat(taxSubItem(numTax.item1)) + parseFloat(taxSubItem(numTax.item2)) + parseFloat(taxSubItem(numTax.item3)) + parseFloat(taxSubItem(numTax.item4));
     }
